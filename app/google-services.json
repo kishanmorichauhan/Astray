@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "790034820449",
+    "project_id": "astray-aef69",
+    "storage_bucket": "astray-aef69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790034820449:android:369e53c398878b4435e920",
+        "android_client_info": {
+          "package_name": "com.example.astray"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790034820449-tv14efdv7k2e8jlv6lldeq8572ojn5j5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBP2ZGSREYeKD4T7jdf4RzX8IowDhp9vI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790034820449-tv14efdv7k2e8jlv6lldeq8572ojn5j5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
