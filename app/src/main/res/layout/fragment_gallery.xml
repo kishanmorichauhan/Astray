@@ -69,15 +69,15 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/addimage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/add"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/add"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:src="@drawable/add" />
-
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

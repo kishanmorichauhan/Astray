@@ -1,9 +1,6 @@
 package com.example.astray.ui.gallery;
 
-import android.Manifest;
-import android.app.ProgressDialog;
-import android.content.ContentResolver;
-import android.content.Context;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.session.MediaSession;
@@ -45,15 +42,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.theartofdev.edmodo.cropper.CropImage;
-
-import java.net.URI;
 import java.util.HashMap;
-import java.util.UUID;
-import java.util.jar.Attributes;
+
 
 import static android.app.Activity.RESULT_OK;
 
@@ -90,7 +81,7 @@ public class GalleryFragment extends Fragment {
 //        });
         button = view.findViewById(R.id.sumbit);
         confirm = view.findViewById(R.id.Confirm);
-        imageView = view.findViewById(R.id.addimage);
+        imageView = view.findViewById(R.id.add);
         mName = view.findViewById(R.id.etfirstname);
         mage = view.findViewById(R.id.etage);
         mGender = view.findViewById(R.id.etgender);
@@ -149,6 +140,7 @@ public class GalleryFragment extends Fragment {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(GalleryFragment.super.getContext(), "Confirm, Your data has been saved", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(GalleryFragment.this.getContext(),home.class));
             }
         });
